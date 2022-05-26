@@ -8,13 +8,15 @@
   
   <title>Huddle landing page with alternating feature blocks</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+
   <link rel="stylesheet" type="text/css" href="./Resources/CSS/Style.css" />
 
 </head>
 <body>
   <header>
     <div class="container">
-      <nav>
+      <nav class="flex">
         <img class="logo" src="./Resources/Images/logo.svg" alt="Logo"/>
         <button class="try-it">Try It Free </button>
       </nav>
@@ -26,11 +28,11 @@
           <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
             Create connections with your users as you engage in genuine discussion.</p> 
       
-          <button class="Get Started">Get Started For Free</button>
+          <button class="Get-Started">Get Started For Free</button>
         </div>
-
-        <img src="./Resources/Images/illustration-mockups.svg" alt="mockups" />
-
+        <div>
+            <img src="./Resources/Images/illustration-mockups.svg" alt="mockups" />
+        </div>
       </div>
     </div>
   </header>
@@ -45,10 +47,15 @@
             Think of the insightful conversations you miss out on with a feedback form. 
           </p>
         </div>
-        <img src="./Resources/Images/illustration-grow-together.svg" alt="grow-together" />
+        <div>
+            <img src="./Resources/Images/illustration-grow-together.svg" alt="grow-together" />
+        </div>
       </div>
   
-      <div class="box flex">
+      <div class="box flex box-reverse-mobile">  
+        <div>
+            <img src="./Resources/Images/illustration-flowing-conversation.svg" alt="flowing-conversation" />
+        </div>
         <div>
           <h2>Flowing Conversations</h2>
           <p>
@@ -56,7 +63,6 @@
             have just-in-time loading for a more natural flow.
           </p>
         </div>
-        <img src="./Resources/Images/illustration-flowing-conversation.svg" alt="flowing-conversation" />
       </div>
 
       <div class="box flex">
@@ -67,23 +73,24 @@
             This means, once signed in to your app, your users can start chatting immediately.
           </p>
         </div>
-        <img src="./Resources/Images/illustration-your-users.svg" alt="your-users" />
+        <div>
+            <img src="./Resources/Images/illustration-your-users.svg" alt="your-users" />
+        </div>
       </div>  
     </div> 
   </main>
 
-  <div class="container">
-    <div class="box">
+  <div class="container center">
+    <div class="box small-box">
         <h2>Ready To Build Your Community?</h2>
-        <button class="Get Started 2">Get Started For Free</button>
-      </div>
+        <button class="Get-Started-2">Get Started For Free</button>
+    </div>
   </div>
   
   <footer>
       <div class="container">
-        <img src="./Resources/Images/logo.svg" alt="logo" />
-     
-     <div class="flex">
+            <img src="./Resources/Images/logo white.svg" alt="logo" />
+     <div class="flex align-start">
          <div>
              <ul>
                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -107,20 +114,20 @@
              </ul>
          </div>
          <div>
-             <ul>
+             <ul class="flex">
                  <li>
-                     <a href="#">
+                     <a class="circle"  href="#">
+                         <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                 <li>
+                     <a class="circle" href="#">
                          <i class="fab fa-twitter"></i>
                         </a>
                     </li>
                  <li>
-                     <a href="#">
-                         <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                 <li>
-                     <a href="#">
-                         <i class="fab fa-twitter"></i>
+                     <a class="circle" href="#">
+                         <i class="fab fa-instagram"></i>
                         </a>
                     </li>
              </ul>
