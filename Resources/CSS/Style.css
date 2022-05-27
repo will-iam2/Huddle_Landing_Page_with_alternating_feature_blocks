@@ -7,6 +7,7 @@
 body {
     color: hsl(192, 100%, 9%);
     font-family: "Open Sans", sans-serif;
+    font-size: 1.15em;
     margin: 0;
 }
 
@@ -15,6 +16,9 @@ h2 {
     font-family: "Poppins", sans-serif;
 }
 
+p{
+    opacity: 0.6;
+}
 
 img {
     max-width: 100%;
@@ -75,7 +79,8 @@ img {
     align-items: flex-start;
 }
 
-.flex > div {
+.flex > div, 
+.flex > ul {
     flex: 1;
 }
 
@@ -86,6 +91,11 @@ header {
     background-color: hsl(193, 100%, 96%);
     padding: 40px 0;
 
+}
+
+.header-img{
+    margin-left: 20%;
+    width: 80%;
 }
 
 nav {
@@ -132,8 +142,10 @@ footer ul li {
     margin-bottom: 20px;
 }
 
-footer ul.flex li{
-
+footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .circle{
@@ -162,6 +174,14 @@ footer p{
     nav.flex {
         flex-direction: row;
     }
+
+    .header-img{
+        margin-top: 40px;
+        margin-left: 0;
+        width: 100%;
+
+    }
+
     .flex{
         flex-direction: column;
     }
@@ -169,5 +189,15 @@ footer p{
     .box-reverse-mobile {
         flex-direction: column-reverse;
     }
+
+    footer ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    footer p{
+        text-align: center;
+    }
     
+
 }
